@@ -38,10 +38,13 @@ Note: To help to deploy it, a script [copy_to_cluster.sh](copy_to_cluster.sh) ca
 
 Below parameters can be set using ```--conf "parameterName=Value"``` in spark-submit command.
 
-spark.hdfs.dirs : A comma separated list of directories to scan (it will be recursive so one can specify a common root directory)
-spark.files.min.size : Minimum file size, files lower than this will be merged if possible
-spark.files.max.size : Maximum file size, files greater than this will be split if possible
-spark.files.optimal.size : Optimal file size, file size to try to reach
+**spark.hdfs.dirs** : A comma separated list of directories to scan (it will be recursive so one can specify a common root directory)
+
+**spark.files.min.size** : Minimum file size, files lower than this will be merged if possible
+
+**spark.files.max.size** : Maximum file size, files greater than this will be split if possible
+
+**spark.files.optimal.size** : Optimal file size, file size to try to reach
 
 
 All others parameters for Spark can be specified in the spark-submit command, especially keytab and principal if running on kerberized environment 
